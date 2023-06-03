@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ConfirmationBooking">
+
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/back"
+            android:fontFamily="@font/montserrat_semibold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/specialty_dentist"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doctorName" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine3"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/back"
+            android:ems="10"
+            android:gravity="start|top"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView49"
+            tools:ignore="LabelFor,RtlSymmetry,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+        <ImageButton
+            android:id="@+id/imageView34"
+            android:layout_width="98dp"
+            android:layout_height="93dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/emptybtn"
+            android:importantForAccessibility="no"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add"
+            app:layout_constraintEnd_toEndOf="@+id/generateQR"
+            app:layout_constraintStart_toStartOf="@+id/generateQR"
+            app:layout_constraintTop_toTopOf="@+id/generateQR"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageView36"
+            android:layout_width="98dp"
+            android:layout_height="93dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/emptybtn"
+            android:importantForAccessibility="no"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_download_24"
+            app:layout_constraintEnd_toEndOf="@+id/Download"
+            app:layout_constraintStart_toStartOf="@+id/Download"
+            app:layout_constraintTop_toTopOf="@+id/Download"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/doctor_details"
+            android:textColor="#1433A4"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintEnd_toEndOf="@+id/imageView6"
+            app:layout_constraintStart_toEndOf="@+id/backButton"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="50dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/imageView6"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/doctorImage"
+            android:layout_width="135dp"
+            android:layout_height="139dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+            app:srcCompat="@drawable/smilingdoctor"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/doctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/dr1"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doctorImage" />
+
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/back"
+            android:fontFamily="@font/montserrat"
+            android:padding="10dp"
+            android:text="@string/last_visit_1"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView31"
+            app:layout_constraintTop_toTopOf="@+id/imageView31" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/back"
+            android:fontFamily="@font/montserrat"
+            android:padding="10dp"
+            android:text="@string/fees1"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView32"
+            app:layout_constraintTop_toTopOf="@+id/imageView32" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/precription"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:fontFamily="@font/montserrat_medium"
+            app:layout_constraintStart_toStartOf="@+id/generateQR"
+            app:layout_constraintTop_toBottomOf="@+id/imageView32" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/notes"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:fontFamily="@font/montserrat_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/generateQR" />
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="50dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:foregroundTint="@color/white"
+            android:importantForAccessibility="no"
+            android:src="@drawable/baseline_access_time_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView55"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="50dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:foregroundTint="@color/white"
+            android:importantForAccessibility="no"
+            android:src="@drawable/baseline_attach_money_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView31"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/generateQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/back"
+            android:fontFamily="@font/montserrat"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="100dp"
+            android:paddingBottom="5dp"
+            android:text="@string/generate_nqr_code"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/Download"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <TextView
+            android:id="@+id/Download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/back"
+            android:fontFamily="@font/montserrat"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="100dp"
+            android:paddingBottom="5dp"
+            android:text="@string/download_nimage"
+            android:textAlignment="center"
+            android:textColor="#BBDEFB"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/generateQR"
+            app:layout_constraintTop_toBottomOf="@+id/textView33"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/bookagain"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="65dp"
+            android:background="@drawable/btn"
+            android:backgroundTint="#FEFEFE"
+            android:fontFamily="@font/montserrat_semibold"
+
+            android:text="@string/book_again"
+            android:textAllCaps="false"
+            android:textColor="#1433A4"
+            android:textSize="20sp"
+            app:iconTint="#FEFEFE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine3"
+            tools:ignore="VisualLintButtonSize" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

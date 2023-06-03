@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/choicePage">
+    <fragment
+        android:id="@+id/main"
+        android:name="com.example.myapplication.fragment.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_main_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_main_to_register"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.myapplication.fragment.main.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.myapplication.fragment.main.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/choicePage"
+        android:name="com.example.myapplication.fragment.main.ChoicePageFragment"
+        android:label="fragment_choice_page"
+        tools:layout="@layout/fragment_choice_page" >
+        <action
+            android:id="@+id/action_choicePage_to_main"
+            app:destination="@id/main" />
+        <action
+            android:id="@+id/action_choicePage_to_loginD"
+            app:destination="@id/loginD" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginD"
+        android:name="com.example.myapplication.fragment.main.LoginFragmentDoctor"
+        android:label="fragment_login_d"
+        tools:layout="@layout/fragment_login_d" />
+
+
+</navigation>
