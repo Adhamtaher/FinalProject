@@ -15,19 +15,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:visibility="visible"
-        android:backgroundTint="@color/white"
+        android:visibility="gone"
+        app:cardCornerRadius="20dp"
         android:layout_centerInParent="true"
         >
 
         <com.airbnb.lottie.LottieAnimationView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:scaleType="centerCrop"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
             app:lottie_rawRes="@raw/loading"
-            app:lottie_speed="1.5"
-            android:scaleType="centerCrop"/>
+            app:lottie_speed="1.5" />
     </androidx.cardview.widget.CardView>
 
     <ScrollView
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/background"
             tools:context=".fragment.medicalhistory.doctor.DoctorHistoryList"
-            android:visibility="gone"
+            android:visibility="visible"
             android:id="@+id/constraintLayout"
             >
 

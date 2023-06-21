@@ -10,17 +10,18 @@
         android:id="@+id/okbutton"
         android:layout_width="154dp"
         android:layout_height="65dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/btn"
         android:fontFamily="@font/montserrat_extrabold"
         android:text="@string/ok"
         android:textAllCaps="false"
         android:textColor="#1433A4"
         android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/txtTurnNum"
         tools:ignore="TextSizeCheck" />
 
     <ImageView
@@ -55,29 +56,33 @@
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/montserrat_extrabold"
         android:text="@string/your_turn_number_is"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTurnNum"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/textView31"
+        android:id="@+id/txtTurnNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/montserrat_extrabold"
-        android:text="@string/_12"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="96sp"
+        app:layout_constraintBottom_toTopOf="@+id/okbutton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+        app:layout_constraintTop_toBottomOf="@+id/textView30"
+        tools:text="@string/_12" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
