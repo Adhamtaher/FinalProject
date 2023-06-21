@@ -27,7 +27,7 @@ class DoctorDetalisHistory : Fragment() {
     ): View? {
         binding = FragmentDoctorDetalisHistoryBinding.inflate(inflater, container, false)
         binding.generateQR.setOnClickListener {
-            val textToEncode = "Hello, World!"
+            val textToEncode = "PANADOL COLD & FLU,\nAUGMENTIN 1GM,\nCOMETREX"
             val qrCodeSize = 512
 
             // Generate QR code bitmap
